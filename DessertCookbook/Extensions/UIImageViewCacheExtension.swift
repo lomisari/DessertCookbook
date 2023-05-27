@@ -20,7 +20,7 @@ extension UIImageView {
             
             DispatchQueue.main.async {
                 self.image = image
-                // Cache the image
+                // MARK: - Cache the image
                 ImageCache.shared.cacheImage(image, forURL: url.absoluteString)
             }
         }.resume()

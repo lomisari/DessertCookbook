@@ -53,7 +53,7 @@ class NetworkManager {
                                                         
                             fetchCount += 1
 
-                            // Check if all fetches are completed
+                            // MARK: - Check if all fetches are completed
                             if fetchCount == mealIDs.count {
                                 mealsResponseData.meals = updatedMeals //: Assign the updated meals array to mealsResponseData
                                 completion(.success((mealsResponseData, mealIDs)))

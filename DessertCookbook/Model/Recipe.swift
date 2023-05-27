@@ -8,7 +8,6 @@
 import Foundation
 
 struct Recipe: Codable, Identifiable {
-//    let idMeal: String
     
     // MARK: - Convert idMeal -> id to ensure Recipe conforms to the 'Identifiable' protocol
     var id: String {
@@ -76,7 +75,7 @@ struct Recipe: Codable, Identifiable {
             strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20
         ]
         
-        // Filter out nil values and return the result
+        // MARK: - Filter out nil values and return the result
         return allIngredients.compactMap { $0 }
     }
 
@@ -89,7 +88,7 @@ struct Recipe: Codable, Identifiable {
             strMeasure16, strMeasure17, strMeasure18, strMeasure19, strMeasure20
         ]
         
-        // Filter out nil values and return the result
+        // MARK: - Filter out nil values and return the result
         return allMeasurements.compactMap { $0 }
     }
     

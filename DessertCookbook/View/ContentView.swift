@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - PROPERTIES
     @StateObject private var recipeViewModel = RecipeViewModel()
-//    @State private var recipes: [Recipe] = []
     @State var isActive: Bool = false
     
     // MARK: - BODY
