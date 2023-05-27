@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB01C5A32A2039D300A90E1A /* DessertAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5A22A2039D300A90E1A /* DessertAppApp.swift */; };
-		EB01C5A52A2039D300A90E1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5A42A2039D300A90E1A /* ContentView.swift */; };
+		EB01C5A32A2039D300A90E1A /* DessertCookbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5A22A2039D300A90E1A /* DessertCookbook.swift */; };
 		EB01C5A72A2039D500A90E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB01C5A62A2039D500A90E1A /* Assets.xcassets */; };
 		EB01C5AA2A2039D500A90E1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB01C5A92A2039D500A90E1A /* Preview Assets.xcassets */; };
+		EB01C5B42A203A7C00A90E1A /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5B32A203A7C00A90E1A /* RecipeDetailView.swift */; };
+		EB01C5B62A203A9700A90E1A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5B52A203A9700A90E1A /* Recipe.swift */; };
+		EB01C5B82A203AA900A90E1A /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5B72A203AA900A90E1A /* RecipeViewModel.swift */; };
+		EB01C5BB2A2103B400A90E1A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5BA2A2103B400A90E1A /* NetworkManager.swift */; };
+		EB01C5BE2A212E8900A90E1A /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5BD2A212E8900A90E1A /* ImageView.swift */; };
+		EB01C5C02A212F3100A90E1A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5BF2A212F3100A90E1A /* ImageLoader.swift */; };
+		EB01C5C22A2134EF00A90E1A /* UIImageViewCacheExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5C12A2134EF00A90E1A /* UIImageViewCacheExtension.swift */; };
+		EB01C5C42A21399E00A90E1A /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5C32A21399E00A90E1A /* LoadView.swift */; };
+		EB01C5C72A21C3BB00A90E1A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01C5C62A21C3BB00A90E1A /* ImageCache.swift */; };
+		EB06B1102A21DC05003768F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB06B10F2A21DC05003768F3 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB01C59F2A2039D300A90E1A /* DessertApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DessertApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB01C5A22A2039D300A90E1A /* DessertAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertAppApp.swift; sourceTree = "<group>"; };
-		EB01C5A42A2039D300A90E1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB01C59F2A2039D300A90E1A /* DessertCookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DessertCookbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB01C5A22A2039D300A90E1A /* DessertCookbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertCookbook.swift; sourceTree = "<group>"; };
 		EB01C5A62A2039D500A90E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB01C5A92A2039D500A90E1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB01C5B32A203A7C00A90E1A /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		EB01C5B52A203A9700A90E1A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		EB01C5B72A203AA900A90E1A /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		EB01C5BA2A2103B400A90E1A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB01C5BD2A212E8900A90E1A /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		EB01C5BF2A212F3100A90E1A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		EB01C5C12A2134EF00A90E1A /* UIImageViewCacheExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewCacheExtension.swift; sourceTree = "<group>"; };
+		EB01C5C32A21399E00A90E1A /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
+		EB01C5C62A21C3BB00A90E1A /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		EB06B10F2A21DC05003768F3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +53,7 @@
 		EB01C5962A2039D300A90E1A = {
 			isa = PBXGroup;
 			children = (
-				EB01C5A12A2039D300A90E1A /* DessertApp */,
+				EB01C5A12A2039D300A90E1A /* DessertCookbook */,
 				EB01C5A02A2039D300A90E1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +61,25 @@
 		EB01C5A02A2039D300A90E1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB01C59F2A2039D300A90E1A /* DessertApp.app */,
+				EB01C59F2A2039D300A90E1A /* DessertCookbook.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB01C5A12A2039D300A90E1A /* DessertApp */ = {
+		EB01C5A12A2039D300A90E1A /* DessertCookbook */ = {
 			isa = PBXGroup;
 			children = (
-				EB01C5A22A2039D300A90E1A /* DessertAppApp.swift */,
-				EB01C5A42A2039D300A90E1A /* ContentView.swift */,
+				EB01C5A22A2039D300A90E1A /* DessertCookbook.swift */,
+				EB01C5B22A203A1000A90E1A /* View */,
+				EB01C5B02A2039FF00A90E1A /* Model */,
+				EB01C5B12A203A0B00A90E1A /* View Model */,
+				EB01C5B92A21039A00A90E1A /* NetworkManager */,
+				EB01C5C52A21C3A400A90E1A /* Cache */,
+				EB01C5BC2A21248900A90E1A /* Extensions */,
 				EB01C5A62A2039D500A90E1A /* Assets.xcassets */,
 				EB01C5A82A2039D500A90E1A /* Preview Content */,
 			);
-			path = DessertApp;
+			path = DessertCookbook;
 			sourceTree = "<group>";
 		};
 		EB01C5A82A2039D500A90E1A /* Preview Content */ = {
@@ -67,12 +90,64 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EB01C5B02A2039FF00A90E1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB01C5B52A203A9700A90E1A /* Recipe.swift */,
+				EB01C5BF2A212F3100A90E1A /* ImageLoader.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB01C5B12A203A0B00A90E1A /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB01C5B72A203AA900A90E1A /* RecipeViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		EB01C5B22A203A1000A90E1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB06B10F2A21DC05003768F3 /* ContentView.swift */,
+				EB01C5B32A203A7C00A90E1A /* RecipeDetailView.swift */,
+				EB01C5BD2A212E8900A90E1A /* ImageView.swift */,
+				EB01C5C32A21399E00A90E1A /* LoadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB01C5B92A21039A00A90E1A /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB01C5BA2A2103B400A90E1A /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		EB01C5BC2A21248900A90E1A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB01C5C12A2134EF00A90E1A /* UIImageViewCacheExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB01C5C52A21C3A400A90E1A /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				EB01C5C62A21C3BB00A90E1A /* ImageCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB01C59E2A2039D300A90E1A /* DessertApp */ = {
+		EB01C59E2A2039D300A90E1A /* DessertCookbook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB01C5AD2A2039D500A90E1A /* Build configuration list for PBXNativeTarget "DessertApp" */;
+			buildConfigurationList = EB01C5AD2A2039D500A90E1A /* Build configuration list for PBXNativeTarget "DessertCookbook" */;
 			buildPhases = (
 				EB01C59B2A2039D300A90E1A /* Sources */,
 				EB01C59C2A2039D300A90E1A /* Frameworks */,
@@ -82,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = DessertApp;
+			name = DessertCookbook;
 			productName = DessertApp;
-			productReference = EB01C59F2A2039D300A90E1A /* DessertApp.app */;
+			productReference = EB01C59F2A2039D300A90E1A /* DessertCookbook.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB01C59A2A2039D300A90E1A /* Build configuration list for PBXProject "DessertApp" */;
+			buildConfigurationList = EB01C59A2A2039D300A90E1A /* Build configuration list for PBXProject "DessertCookbook" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB01C59E2A2039D300A90E1A /* DessertApp */,
+				EB01C59E2A2039D300A90E1A /* DessertCookbook */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB01C5A52A2039D300A90E1A /* ContentView.swift in Sources */,
-				EB01C5A32A2039D300A90E1A /* DessertAppApp.swift in Sources */,
+				EB01C5C72A21C3BB00A90E1A /* ImageCache.swift in Sources */,
+				EB01C5C42A21399E00A90E1A /* LoadView.swift in Sources */,
+				EB06B1102A21DC05003768F3 /* ContentView.swift in Sources */,
+				EB01C5BB2A2103B400A90E1A /* NetworkManager.swift in Sources */,
+				EB01C5B42A203A7C00A90E1A /* RecipeDetailView.swift in Sources */,
+				EB01C5A32A2039D300A90E1A /* DessertCookbook.swift in Sources */,
+				EB01C5B82A203AA900A90E1A /* RecipeViewModel.swift in Sources */,
+				EB01C5C22A2134EF00A90E1A /* UIImageViewCacheExtension.swift in Sources */,
+				EB01C5BE2A212E8900A90E1A /* ImageView.swift in Sources */,
+				EB01C5C02A212F3100A90E1A /* ImageLoader.swift in Sources */,
+				EB01C5B62A203A9700A90E1A /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +350,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DessertApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DessertCookbook/Preview Content\"";
 				DEVELOPMENT_TEAM = N9ZQH35Z2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,8 +364,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lomisari.DessertApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lomisari.DessertCookbook;
+				PRODUCT_NAME = DessertCookbook;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DessertApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DessertCookbook/Preview Content\"";
 				DEVELOPMENT_TEAM = N9ZQH35Z2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,8 +393,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lomisari.DessertApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lomisari.DessertCookbook;
+				PRODUCT_NAME = DessertCookbook;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB01C59A2A2039D300A90E1A /* Build configuration list for PBXProject "DessertApp" */ = {
+		EB01C59A2A2039D300A90E1A /* Build configuration list for PBXProject "DessertCookbook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB01C5AB2A2039D500A90E1A /* Debug */,
@@ -329,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB01C5AD2A2039D500A90E1A /* Build configuration list for PBXNativeTarget "DessertApp" */ = {
+		EB01C5AD2A2039D500A90E1A /* Build configuration list for PBXNativeTarget "DessertCookbook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB01C5AE2A2039D500A90E1A /* Debug */,
