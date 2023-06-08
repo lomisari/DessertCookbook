@@ -29,8 +29,8 @@ struct LoadView: View {
             } //: DISPATCHQUEUE
         } //: .ONAPPEAR
         
-    }
-}
+    } //: body
+} //: LoadView
 
 struct LoadView_Previews: PreviewProvider {
     static var previews: some View {

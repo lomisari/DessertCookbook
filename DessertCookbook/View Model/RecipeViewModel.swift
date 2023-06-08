@@ -11,27 +11,23 @@ class RecipeViewModel: ObservableObject {
     // MARK: - PROPERTIES
     @Published var meals: [Recipe] = []
     
-    private let networkManager = NetworkManager()
+    private let networkManager: NetworkManagerProtocol
+        
+    init(networkManager: NetworkManagerProtocol = NetworkManager()) {
+        self.networkManager = networkManager
+    } //: init
     
     func fetchRecipes() {
-        
-        networkManager.fetchMeals { result in
-            
-            switch result {
-                
-            case .success((let mealsResponse, _)):
+        Task {
+            do {
+                let mealResponse = try await networkManager.fetchMeals()
                 DispatchQueue.main.async {
-                    // MARK: - MealsResponse meals data fetched from successful run of decoder in NetworkManager()
-                    self.meals = mealsResponse.meals
+                    // MARK: - MealsResponse meals data fetched from decoder in NetworkManager()
+                    self.meals = mealResponse.meals
                 } //: DispatchQueue.main.async
-                
-            case .failure(let error):
+            } catch {
                 print("Error fetching meals data: \(error)")
-                                
-            } //: switch
-            
-        } //: networkManager.fetchMeals
+            } //: catch
+        } //: Task
     } //: fetchRecipes
-    
-    
-}
+} //: RecipeViewModel class

@@ -13,8 +13,12 @@ struct ImageView: View {
     @StateObject private var imageLoader: ImageLoader
     
     init(urlString: String) {
-        _imageLoader = StateObject(wrappedValue: ImageLoader(urlString: urlString))
-    }
+//        let cacheDirectoryURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("ImageCache")
+        let imageCache = ImageCache.shared
+                
+        let loader = ImageLoader(urlString: urlString, imageCache: imageCache)
+        self._imageLoader = StateObject(wrappedValue: loader)
+    } //: init
     
     // MARK: - BODY
     var body: some View {
@@ -24,7 +28,7 @@ struct ImageView: View {
                 .resizable()
         } else {
             Image(systemName: "fork.knife")
-        }
+        } //: if else
         
     } //: body
 } //: ImageView

@@ -10,7 +10,13 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - PROPERTIES
     @StateObject private var recipeViewModel = RecipeViewModel()
+//    @StateObject private var recipeViewModel: RecipeViewModel
+    
     @State var isActive: Bool = false
+    
+//    init(networkManager: NetworkManager) {
+//        _recipeViewModel = StateObject(wrappedValue: RecipeViewModel(networkManager: networkManager))
+//    }
     
     // MARK: - BODY
     var body: some View {
@@ -38,7 +44,7 @@ struct ContentView: View {
                     withAnimation {
                         self.isActive = true
                     }
-                }
+                } //: DispatchQueue
             } //: .ONAPPEAR
 
         } else {
@@ -47,19 +53,19 @@ struct ContentView: View {
             
             NavigationView {
 
-                List(recipeViewModel.meals.sorted { $0.strMeal < $1.strMeal }) { recipe in
+                List(recipeViewModel.meals.sorted { $0.name < $1.name }) { recipe in
                     
                     NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
 
                         HStack(spacing: 15) {
                             
-                            ImageView(urlString: recipe.strMealThumb ?? "")
+                            ImageView(urlString: recipe.image ?? "")
                                 .scaledToFit()
                                 .frame(width: 80, height: 80)
                                 .cornerRadius(15)
                                 .padding(5)
                             
-                            Text(recipe.strMeal) //: Meal Name
+                            Text(recipe.name) //: Meal Name
                                 .padding(.leading, 5)
                                 .padding(.trailing, 15)
                                 .font(.title3)
@@ -74,6 +80,7 @@ struct ContentView: View {
                 
             } //: NavigationView
             .onAppear {
+                
                 recipeViewModel.fetchRecipes()
                 print("Ran: fetchRecipes() called.")
             } //: onAppear

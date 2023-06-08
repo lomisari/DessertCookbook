@@ -19,7 +19,7 @@ struct RecipeDetailView: View {
             VStack(alignment: .leading, spacing: 10) {
                 
                 // MARK: - Meal Header Image
-                ImageView(urlString: recipe.strMealThumb ?? "")
+                ImageView(urlString: recipe.image ?? "")
                     .scaledToFill()
                     .cornerRadius(15)
 
@@ -27,7 +27,7 @@ struct RecipeDetailView: View {
                 VStack(alignment: .leading, spacing: 10) {
                     
                     // MARK: - Meal Name
-                    Text(recipe.strMeal)
+                    Text(recipe.name)
                         .font(.title)
                         .fontDesign(.serif)
                         .bold()
@@ -44,7 +44,7 @@ struct RecipeDetailView: View {
                             .bold()
 //                            .padding(.vertical)
 
-                        Text(recipe.strInstructions ?? "null") //: Recipe Instructions
+                        Text(recipe.instructions ?? "") //: Recipe Instructions
                             .font(.body)
                             .fontDesign(.serif)
                             .fixedSize(horizontal: false, vertical: true)
@@ -56,14 +56,7 @@ struct RecipeDetailView: View {
                             .bold()
                         
                         // MARK: - Recipe Ingredients List
-                        ForEach(Array(zip(recipe.measurements, recipe.ingredients)).compactMap { ($0, $1) }, id: \.0) { (measurement, ingredient) in
-                            if !measurement.isEmpty && !ingredient.isEmpty {
-                                Text("• \(measurement) \(ingredient)")
-                                    .id(UUID())
-                                    .font(.body)
-                                    .fontDesign(.serif)
-                            }
-                            }
+                        generateIngredientsList()
                         
                     } //: VStack
                     
@@ -81,4 +74,18 @@ struct RecipeDetailView: View {
         
         
     } //: Body
+    
+    @ViewBuilder private func generateIngredientsList() -> some View {
+        let zippedArray = Array(zip(recipe.measurements, recipe.ingredients))
+        let filteredArray = zippedArray.filter { !$0.0.isEmpty && !$0.1.isEmpty }
+        
+        ForEach(filteredArray, id: \.0) { (measurement, ingredient) in
+            Text("• \(measurement) \(ingredient)")
+                .id(UUID())
+                .font(.body)
+                .fontDesign(.serif)
+        }
+    } //: ViewBuilder
+
+    
 } //: RecipeDetailView
